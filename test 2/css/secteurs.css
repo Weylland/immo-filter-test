@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "industrial";
+    src: url("../fonts/IND736N.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url("../fonts/Poppins-Light.ttf") format("truetype");
+}
+main {
+    width: 85%;
+    height:max-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.secteurNav{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    font-family: industrial;
+    color:#dfc173;
+    font-size:32px;
+}
+    
+.secteurNav h3{
+    cursor: pointer;
+}
+.secteurNav h3:hover{
+    border-bottom: 1px solid #dfc173
+}
+
+
+#croix{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:50px;
+    opacity: 0.5;
+    
+}
+
+.secteurMenu h1{
+    
+    text-align: center;
+    font-family: industrial;
+    color:#dfc173;
+    font-size:48px;
+    margin:50px 0;
+
+}
+
+main{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn:hover {
+background-color: #ddd;
+}
+
+.btn.active {
+background-color: #666;
+color: white;
+}
+
+.secteurMaisonCadrePrinc{
+    width:500px;
+    height:100%;
+    background-color: white;
+    margin:20px 20px;
+    position: relative;
+    color:black;
+    border:1px #dfc173 solid;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+.arras {
+    background: blue;
+}
+.lille {
+    background: yellow;
+}
+.touquet {
+    background: red;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #17152a;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color:white;
+    z-index: 1;
+    
+}
+.overlay span{
+    font-size:24px;
+    font-family: poppins;
+    border:1px solid white;
+    padding: 10px 10px;
+    color:white;
+    cursor: pointer;
+    
+}
+
+.overlay a {
+    text-decoration: none;
+}
+
+
+.secteurMaisonCadrePrinc:hover .overlay {
+    opacity: 0.9;
+  }
+  
+.secteurMaisonCadrePrinc:hover .secteurContImage img{
+    transform:scale(1.1);
+    transition:0.5s;
+  }
+
+
+.secteurCadreImage{
+    width:100%;
+    height:80%;
+}
+
+.secteurContImage{
+    width: 100%;
+    height:100%;
+    overflow:hidden;
+    
+
+}
+
+.secteurContImage img{
+    height:100%;
+    width:100%;
+
+
+}
+
+.SecteurTexte{
+    height:20%;
+    margin:0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: poppins;
+    font-size: 24px;
+    
+}
+
+
+.hiddenContainer {
+    width:90%;
+    height:90%;
+    justify-content: center;
+    z-index: 2;
+    background-color: white;
+    border-radius: 10px;
+    position: fixed;
+    display: none;
+    margin: 0 5%;
+    border:1px solid #dfc173
+}
+.hiddenContainer img{
+    width:25%;
+    margin:20px;
+}
+
